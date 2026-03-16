@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContentAI Pro - Social Media Content Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Beautiful Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ContentAI Pro</h1>
-        <p>Your ultimate social media content generator with full multilingual support.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Our Beautiful Website</h1>
     </header>
-    <main>
-        <section id="content-generator">
-            <h2>Generate Your Content</h2>
-            <label for="language-select">Choose Language:</label>
-            <select id="language-select">
-                <option value="en">English</option>
-                <option value="ru">Russian</option>
-                <option value="uz">Uzbek</option>
-            </select>
-            <textarea id="content-input" placeholder="Enter your topic here..."></textarea>
-            <button id="generate-btn">Generate Content</button>
-            <div id="output"></div>
-        </section>
-    </main>
+    <div class="content">
+        <h2>Content Generator</h2>
+        <button onclick="generateContent()">Generate Content</button>
+        <div id="generatedContent"></div>
+        <script>
+            function generateContent() {
+                const content = 'Here is the dynamically generated content!';
+                document.getElementById('generatedContent').innerText = content;
+            }
+        </script>
+
+        <h2>Telegram Bot Integration</h2>
+        <p>Contact our bot: <a href="https://t.me/yourbot">@yourbot</a></p>
+
+        <h2>Cryptocurrency Payment System</h2>
+        <p>We accept Bitcoin and Ethereum payments.</p>
+        <h3>Pricing Plans</h3>
+        <ul>
+            <li>Basic Plan: $10 per month</li>
+            <li>Pro Plan: $20 per month</li>
+        </ul>
+    </div>
     <footer>
-        <p>&copy; 2026 ContentAI Pro. All rights reserved.</p>
+        <p>© 2026 Your Company Name</p>
     </footer>
 </body>
 </html>
